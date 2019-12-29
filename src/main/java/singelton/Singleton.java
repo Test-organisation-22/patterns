@@ -1,3 +1,4 @@
+package singelton;
 
 public class Singleton {
 
