@@ -76,6 +76,10 @@ public class Streams {
                 .collect(Collectors.toList());
         targetList.forEach(System.out::println);
 
-
+//      10.
+        System.out.println("\n== Stream.of. Get total sum using reduce()  ==");
+        double total = Stream.of(0.1, 2.0, 3.9)
+                .reduce(0.0, Double::sum);   // same as  .reduce(0.0, (Double a, Double b) -> a + b);
+        System.out.println("Total = " + total);
     }
 }
