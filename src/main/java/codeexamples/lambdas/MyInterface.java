@@ -1,6 +1,6 @@
 package codeexamples.lambdas;
 
-public interface MyFunction {
+public interface MyInterface {
 
     void apply();
 

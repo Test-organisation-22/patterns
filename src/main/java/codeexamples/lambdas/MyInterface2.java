@@ -1,6 +1,6 @@
 package codeexamples.lambdas;
 
-public interface MyFunction2 {
+public interface MyInterface2 {
 
     void apply(String s);
 

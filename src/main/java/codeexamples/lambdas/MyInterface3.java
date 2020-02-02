@@ -1,6 +1,6 @@
 package codeexamples.lambdas;
 
-public interface MyFunction3 {
+public interface MyInterface3 {
 
     void apply(String s, int repetitions);
 
