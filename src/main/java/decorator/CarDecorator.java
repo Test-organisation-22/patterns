@@ -1,15 +1,22 @@
 package decorator;
 
-public abstract class CarDecorator implements Car {
+public abstract class CarDecorator implements ICar {
 
-    private final Car decoratedCar;
+    private final ICar decoratedCar;
 
-    public CarDecorator(Car c) {
+    protected String type;
+
+    protected int cost;
+
+    protected String options;
+
+
+    public CarDecorator(ICar c) {
         this.decoratedCar = c;
     }
 
     @Override
-    public double getCost() {
+    public int getCost() {
         return decoratedCar.getCost();
     }
 

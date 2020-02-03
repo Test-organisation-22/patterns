@@ -2,7 +2,8 @@ package decorator;
 
 public class App {
 
-    public static void printInfo(Car c) {
+    public static void printInfo(ICar c, String s) {
+        System.out.println(s);
         System.out.println("Cost: " + c.getCost() + "; Options: " + c.getOptions());
     }
 
@@ -10,16 +11,16 @@ public class App {
 
         System.out.println("This program in an example of decorator design pattern");
 
-        Car basicCar = new BasicCar();
-        printInfo(basicCar);
+        ICar basicCar = new BasicCar();
+        printInfo(basicCar, "Basic car");
 
-        Car comfortCar = new Comfort(basicCar);
-        printInfo(comfortCar);
+        ICar comfortCar = new WithABS(basicCar);
+        printInfo(comfortCar, "Comfort car");
 
-        Car comfortCar1 = new Comfort(new BasicCar());
-        printInfo(comfortCar1);
+        ICar ComfortPlusCar = new WithGPS(new WithABS(new BasicCar()));
+        printInfo(ComfortPlusCar, "Comfort+ car");
 
-        Car eliteCar = new Elite(new BasicCar());
-        printInfo(eliteCar);
+        ICar eliteCar = new WithSeatHeating(ComfortPlusCar);
+        printInfo(eliteCar, "Elite car");
     }
 }
