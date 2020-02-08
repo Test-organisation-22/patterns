@@ -2,9 +2,9 @@ package decorator;
 
 public abstract class CarDecorator extends Car {
 
-    private final ICar decoratedCar;
+    private final Car decoratedCar;
 
-    public CarDecorator(ICar c) {
+    public CarDecorator(Car c) {
         this.decoratedCar = c;
     }
 

@@ -2,7 +2,7 @@ package decorator;
 
 public class WithGPS extends CarDecorator {
 
-    public WithGPS(ICar c) {
+    public WithGPS(Car c) {
         super(c);
         type = "with GPS Navi";
         cost = super.getCost() + 1300;

@@ -2,7 +2,7 @@ package decorator;
 
 public class WithSeatHeating extends CarDecorator {
 
-    public WithSeatHeating(ICar c) {
+    public WithSeatHeating(Car c) {
         super(c);
         type = "with seat heating";
         cost = super.getCost() + 2000;

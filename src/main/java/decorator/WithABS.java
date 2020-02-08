@@ -2,7 +2,7 @@ package decorator;
 
 public class WithABS extends CarDecorator {
 
-    public WithABS(ICar c) {
+    public WithABS(Car c) {
         super(c);
         type = "with ABS";
         cost = super.getCost() + 500;
