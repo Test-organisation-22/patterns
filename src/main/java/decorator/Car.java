@@ -1,6 +1,12 @@
 package decorator;
 
-public class BasicCar implements ICar {
+public abstract class Car implements ICar {
+
+    protected String type;
+
+    protected int cost;
+
+    protected String options;
 
     @Override
     public String getType() {
@@ -9,7 +15,7 @@ public class BasicCar implements ICar {
 
     @Override
     public int getCost() {
-        return 1000;
+        return 0;
     }
 
     @Override

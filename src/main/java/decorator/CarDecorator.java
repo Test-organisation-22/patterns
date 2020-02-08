@@ -1,15 +1,8 @@
 package decorator;
 
-public abstract class CarDecorator implements ICar {
+public abstract class CarDecorator extends Car {
 
     private final ICar decoratedCar;
-
-    protected String type;
-
-    protected int cost;
-
-    protected String options;
-
 
     public CarDecorator(ICar c) {
         this.decoratedCar = c;
