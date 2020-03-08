@@ -17,7 +17,7 @@ public class Addition {
             int sum = number1 + number2;
             JOptionPane.showMessageDialog(null, "The sum is " + sum, "Sum", JOptionPane.PLAIN_MESSAGE);
         }catch (Exception e){
-            JOptionPane.showMessageDialog(null, "probably that was not numbers");
+            JOptionPane.showMessageDialog(null, "probably that was not a number", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
