@@ -1,4 +1,4 @@
-package observer;
+package observer.simpleobserver;
 
 public interface IObserver {
 
