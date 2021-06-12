@@ -1,7 +1,9 @@
 package observer.watherdata;
 
+import observer.watherdata.service.WeatherMeasurements;
+
 public interface Observer {
 
-    void update(Double tepm, Double hum, Double press);
+    void update(WeatherMeasurements measurements);
 
 }
